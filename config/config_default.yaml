@@ -1,0 +1,26 @@
+# Data path
+raw_dataset_path: data/raw/sales_history.csv
+dataset_path: data/output/data.pkl
+dataset_train_path: data/output/data_train.pkl
+dataset_test_path: data/output/data_test.pkl
+X_train_path: data/output/X_train.pkl
+X_train_clean_path: data/output/X_train_clean.pkl
+y_train_path: data/output/y_train.pkl
+X_test_path: data/output/X_test.pkl
+X_test_clean_path: data/output/X_test_clean.pkl
+y_test_path: data/output/y_test.pkl
+best_model_path: model/best_model.pkl
+
+# Modeling
+datetime_col: Date
+features_col:
+- Year
+- Month
+- Day
+target_col: Weekly_Sales
+last_date_train: 2012-01
+n_splits: 10
+test_size: 1
+param_grid: {
+  n_estimators: [5, 10, 25, 50, 100, 200],
+  max_depth: [5, 10, 25, 50, 100, 200]}
