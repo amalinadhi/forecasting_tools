@@ -1,0 +1,8 @@
+pandas
+PyYAML
+joblib
+matplotlib
+xgboost
+scikit-learn
+fastapi[all]
+streamlit
